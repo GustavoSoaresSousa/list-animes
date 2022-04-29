@@ -6,9 +6,8 @@ export function AnimeContextProvider({children}){
   const [anime, setAnime] = useState('');
   const [animesDefault, setAnimesDefault] = useState({});
   const [animeAndId, setAnimeAndId ] = useState({});
-  console.log(animeAndId)
   const [animeInfo, setAnimeInfo] = useState({});
-
+///anime/41370/categories
   useEffect(() => {
     if(anime === ''){
     fetch(`${api}/trending/anime`).then(res => res.json()).then(data => setAnimeInfo(data))

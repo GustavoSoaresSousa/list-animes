@@ -2,7 +2,7 @@ import React from "react";
 import './style.css';
 import { Input } from '../Input';
 import {AiOutlineHome} from 'react-icons/ai'
-import {BsBookmarkStar} from 'react-icons/bs'
+import {BsBookmarkCheck} from 'react-icons/bs'
 
 
 export function Header(){
@@ -10,7 +10,7 @@ export function Header(){
     <header className="header-container">
           <ul className="header-ul">
             <li><a><AiOutlineHome /></a></li>
-            <li><a><BsBookmarkStar /></a></li>
+            <li><a><BsBookmarkCheck /></a></li>
           </ul>
           <Input />
     </header>
