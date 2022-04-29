@@ -2,53 +2,66 @@
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr  1fr;
+  width: 100%;
+  height: 100vh;
+  background: #262626;
 }
 
 .content-anime-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 8px;
-  padding: 4px 1vh 8px 1vh;
+  margin-top: 32px;
+  padding-bottom:16px;
   width: 90%;
-  background: #BFBFBF;
-  color: #F2F2F2;
+  color: #f2f2f2;
   border-radius: 12px;
   transition: 1s;
 }
 
-.content-anime-card:hover{
-  background: #404040;
-  cursor: pointer;
+.icons {
+  align-self: center;
+}
+
+.icon-content {
+  margin-bottom: 8px;
+  
+}
+
+.icon-content i svg {
+  position: absolute;
+  padding-top: 16px;
+  padding-left: 32px;
+
+  height: 32px;
+  width: 32px;
 }
 
 .title-anime-card {
-  text-align: justify;
+  text-align: center;
 }
 
-.content-anime-card img {
+.content-anime-card .icons img {
+  align-self: center;
   border-radius: 16px;
-  padding: 8 0 8px;
-}
-
-.more-info{
-  border: 0;
-  border-radius: 8px;
-  color: #fff;
-  background: #737373;
+  margin-left: 12px;
   transition: 1s;
 }
 
-.more-info:hover{
-  background-color: #BFBFBF;
+.content-anime-card .icons img:hover {
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  cursor: pointer;
 }
+
 
 @media (min-width: 680px){
   .container-anime-card {
     grid-template-columns: 1fr  1fr 1fr;
+    height: 100%;
   }
   .container-anime-card {
-    width: 95%;
+    width: 100%;
+    height: 100%;
   }
   .content-anime-card img {
     height: 325px;
@@ -58,12 +71,22 @@
   .container-anime-card{
     grid-template-columns: 1fr  1fr 1fr 1fr;
     justify-content: center;
+    height: 100%;
   }
 
   .container-anime-card {
     width: 100%;
+    height: 100%;
   }
   .content-anime-card img {
     height: 350px
+  }
+}
+
+@media (min-width: 1920px) {
+  .container-anime-card{
+    grid-template-columns: 1fr  1fr 1fr 1fr 1fr;
+    justify-content: center;
+    height: 100vh;
   }
 }
