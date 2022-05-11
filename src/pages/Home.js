@@ -3,7 +3,7 @@ import '../styles/global.css'
 import { AnimeCard } from "../components/AnimeCard";
 import { Header } from "../components/Header";
 import { Main } from "../components/Main";
-  import { useAnime } from '../Hook/useAnime';
+import { useAnime } from '../Hook/useAnime';
 
 export function Home(){
   const { animeInfo } = useAnime();

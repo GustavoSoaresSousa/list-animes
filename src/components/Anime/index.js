@@ -16,7 +16,6 @@ export function Anime(){
           <div className="infos">
             <h2 className="title-anime">{animeAndId.title}</h2>
             <div className="description">{animeAndId.description}</div>
-            <button className="add-fav">Add favorites</button>
           </div>
         </div>
       </div>}

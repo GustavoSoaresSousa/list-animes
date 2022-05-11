@@ -6,10 +6,9 @@ export function Input() {
   const { setAnime } = useAnime()
   return (
     <div className="input-container">
-        <input className="input-content " type="text"
-          placeholder="Search your anime here"
-          onChange={(e) => setAnime(e.target.value)}
-        />
+    <span>
+      <input className="basic-slide" id="Anime" type="text" placeholder="Search your anime here" onChange={(e) => setAnime(e.target.value)} /><label for="Anime">Anime</label>
+    </span>
     </div>
   )
 }
